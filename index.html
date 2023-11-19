@@ -8,18 +8,10 @@
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
   </head>
   <body>
-    <!-- <model-viewer> HTML element -->
-    <model-viewer src="roseGLASS.glb" camera-controls poster="poster.webp" shadow-intensity="0" environment-image="music_hall_01_1k.hdr">
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
-          View in your space
-      </button>
-      <div id="ar-prompt">
-          <img src="ar_hand_prompt.png">
-      </div>
-    </model-viewer>  
+    <div class="demo" style="background: linear-gradient(#ffffff, #ada996); overflow-x: hidden;">
+      <span style="position: absolute; text-align: center; font-size: 100px; line-height: 100px; left: 50%; transform: translateX(-50%);">A Rose<br>is always<br>a rose<br>no matter<br>how you<br>call it.</span>
+      <model-viewer camera-controls touch-action="pan-y" src="roseGLASS.glb" alt="A 3D transparency test" style="background-color: unset;"></model-viewer>
+    </div>
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
